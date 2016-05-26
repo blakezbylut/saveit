@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="movieApp">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <script src="/javascripts/angular/main.js" charset="utf-8"></script>
+    <script src="/javascripts/scripts.js" charset="utf-8"></script>
+    <title></title>
+  </head>
+  <body>
+
+    <h1>save it</h1>
+
+    <div class="container" ng-controller="mainController">
+
+
+      <div>
+        <form ng-submit="" id="form-div">
+          <input id="title" type="text" name="title" placeholder="movie title" ng-model="">
+          <input id="year" type="text" name="year" placeholder="year" ng-model="">
+          <input id="notes" type="text" name="notes" placeholder="notes" ng-model="">
+          <input id="priority" type="text" name="priority" placeholder="priority? (A-D)" ng-model="">
+          <button type="submit" name="button">save it</button>
+        </form>
+      </div>
+
+
+      <hr>
+
+      <div id="search-input">
+        <input type="text" name="search" value="" placeholder="search" ng-model="searchQuery">
+      </div>
+
+      <br>
+
+      <div class="table-div">
+
+          <table class="table-notes">
+            <tr>
+              <th width="200">Name</th>
+              <th width="100">Year</th>
+              <th width="300">Notes</th>
+              <th width="100">Priority (A-D)</th>
+              <th width="100">Remove</th>
+            </tr>
+            <tr ng-repeat="">
+              <td>Star Wars</td>
+              <td>2016</td>
+              <td>Very exciting</td>
+              <td>B</td>
+              <td><button ng-click="">Remove</button></td>
+            </tr>
+          </table>
+
+      </div>
+
+    </div>
+
+  </body>
+</html>

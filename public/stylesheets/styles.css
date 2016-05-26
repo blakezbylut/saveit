@@ -1,0 +1,51 @@
+body {
+  font: "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url(http://farm6.staticflickr.com/5286/5342749399_6ba1d9b685_o.jpg);
+  background-size: cover;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h1 {
+  text-align: center;
+  font-family: Futura;
+  font-size: 70px;
+  margin-bottom: 30px;
+}
+
+p {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+hr {
+  margin-bottom: 0;
+}
+
+th {
+  font-size: 15px;
+  padding: 10px;
+}
+
+#nav-bar {
+  text-align: center;
+  padding: 0;
+}
+#search-input {
+  text-align: center;
+  margin-top: 20px;
+}
+#form-div {
+  margin-bottom: 10px;
+}
+
+table {
+  background-color: rgba(255,255,255,0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
